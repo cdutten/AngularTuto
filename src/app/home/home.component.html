@@ -1,4 +1,6 @@
-<h1 [class.gray]="h1Style">Home</h1>
+<h1 [class.gray]="h1Style">{{ title | uppercase }}</h1>
+
+<h3> Hoy es:  {{ today | date:'medium' }} </h3>
 
 <button (click)="firstClick()">Pisa este boton wachin</button>
 <p (copy)="copyText()" (cut)="cutText()">Yo soy re magico</p>
