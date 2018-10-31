@@ -1,6 +1,13 @@
 <h1 [class.gray]="h1Style">{{ title | uppercase }}</h1>
 
-<h3> Hoy es:  {{ today | date:'medium' }} </h3>
-
 <button (click)="firstClick()">Pisa este boton wachin</button>
 <p (copy)="copyText()" (cut)="cutText()">Yo soy re magico</p>
+
+<h1>Users</h1>
+
+<ul *ngIf="users">
+    <li *ngFor="let user of users.data">
+        <img [src]="user.avatar">
+        <p>{{ user.first_name }} {{ user.last_name }}</p>
+    </li>
+</ul>

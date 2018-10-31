@@ -1,13 +1,18 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  firstClick() {
-    return console.log('clicked');
+  getUsers() {
+    return this.http.get('https://reqres.in/api/users');
+  }
+
+  getCatFacts() {
+      return this.http.get('https://crossorigin.me/https://catfact.ninja/fact');
   }
 }
