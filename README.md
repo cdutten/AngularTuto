@@ -1,3 +1,6 @@
+# Crash course of Coursetro about Angular 7
+[Link to the tutorial](https://coursetro.com/posts/code/171/Angular-7-Tutorial---Learn-Angular-7-by-Example)
+
 # Ng7
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.1.
